@@ -54,29 +54,6 @@ X_train, X_val, y_train, y_val = train_test_split(
 )
 
 
-X_full_train.shape, X_train.shape, X_val.shape, X_test.shape
-
-
-y_full_train.shape, y_train.shape, y_val.shape, y_test.shape
-
-
-y_full_train.value_counts(normalize=True)
-
-
-
-
-global_stroke = y_full_train.mean()
-round(global_stroke, 2)
-
-
-# In[64]:
-
-
-X_full_train.columns
-
-
-# In[65]:
-
 
 numerical = ['age', 'avg_glucose_level', 'bmi']
 
@@ -133,18 +110,8 @@ auc_score = roc_auc_score(y_test_binarized, logreg_probs)
 print(f"Binary ROC AUC Score: {auc_score:.4f}")
 
 
-# Select a final model
-# here we would save the best model which we would use for deployment
-
-# In[114]:
-
-
 with open('model.pkl', 'wb') as f_out:
     pickle.dump(logreg, f_out)
-
-
-# In[115]:
-
 
 f_out.close()
 
