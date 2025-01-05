@@ -9,8 +9,7 @@ import json
 model_path = 'deployment/web/model.pkl'
 
 # Load the trained Logistic Regression model
-input_file = 'model.pkl'
-with open(input_file, 'rb') as f_in: 
+with open(model_path, 'rb') as f_in: 
     dv, model = pickle.load(f_in)
 
 # Set page configuration
