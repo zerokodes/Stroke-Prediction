@@ -5,8 +5,8 @@ from PIL import Image
 import json
 
 # Path to the trained model
-model_path = 'model.pkl'
-#model_path = 'deployment/web/model.pkl'
+#model_path = 'model.pkl'
+model_path = 'deployment/web/model.pkl'
 
 # Load the trained Logistic Regression model
 input_file = 'model.pkl'
