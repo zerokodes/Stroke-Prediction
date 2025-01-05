@@ -95,4 +95,5 @@ st.markdown(
     Consult a healthcare professional for an accurate evaluation.*
     """
 )
+st.markdown("Created by @zerokodes")
 
