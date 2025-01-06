@@ -50,12 +50,7 @@ pip install -r requirements.txt
 stroke-prediction/
 |— data/                 # Directory to store the dataset
 |— notebooks/            # Jupyter notebooks for exploration
-|— models/               # Saved models
-|— src/                  # Source code
-|   |— preprocess.py    # Data preprocessing module
-|   |— train.py         # Model training script
-|   |— predict.py       # Prediction script
-|— requirements.txt    # List of dependencies
+|— deployment/               # local and web deployment
 |— README.md            # Project documentation
 ```
 
